@@ -1,6 +1,8 @@
 const studentName = process.env.NEXT_PUBLIC_STUDENT_NAME || "Malik Shajar Hussain";
 
 export default function Home() {
+  const completedLabs = ["Docker", "LocalStack", "Terraform", "Vercel"];
+
   return (
     <main
       style={{
@@ -39,6 +41,16 @@ export default function Home() {
           Frontend deployment using Next.js, Vercel, Serverless Functions,
           Edge Runtime, and Preview Deployments.
         </p>
+
+        <div style={{ marginTop: "28px", textAlign: "left" }}>
+          <h2 style={{ fontSize: "24px" }}>Completed Cloud Labs</h2>
+
+          <ul style={{ fontSize: "18px", lineHeight: "1.8" }}>
+            {completedLabs.map((lab) => (
+              <li key={lab}>{lab}</li>
+            ))}
+          </ul>
+        </div>
       </section>
     </main>
   );

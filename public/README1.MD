@@ -23,3 +23,5 @@ This project demonstrates a Next.js frontend deployed on Vercel with serverless 
 ## Production URL
 
 Paste your Vercel production URL here after deployment.
+
+https://cloud-lab8-vercel-os9i2q39s-shajars-projects-aea34718.vercel.app/
